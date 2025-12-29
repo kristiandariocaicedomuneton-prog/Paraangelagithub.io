@@ -42,14 +42,21 @@
       max-width: 250px;
       border-radius: 15px;
     }
+    .contenedor {
+      display: grid;
+      grid-template-rows: auto auto; /* dos filas */
+      gap: 10px; /* espacio entre el p y el div (opcional) */
+    }
   </style>
 </head>
 <body>
-  <p>Debes seleccionar una opcion.</p>
-  <div class="box" id="content">
-    <h1 id="question">¿Me quieres?</h1>
-    <button class="yes" onclick="sayYes()">Sí</button>
-    <button class="no" onclick="sayNo()">No</button>
+  <div class="contenedor">
+    <p>Debes seleccionar una opcion.</p>
+    <div class="box" id="content">
+      <h1 id="question">¿Me quieres?</h1>
+      <button class="yes" onclick="sayYes()">Sí</button>
+      <button class="no" onclick="sayNo()">No</button>
+    </div>
   </div>
 
   <script>
